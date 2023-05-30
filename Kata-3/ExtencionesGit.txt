@@ -1,0 +1,39 @@
+COMANDOS DE TERMINAL
+
+-pwd, print working directory = imprimir directorio de trabajo
+
+-ls, list items = listar elementos
+
+-TIP: cuando nombres carpetas o archivos, hazlo en minusculas con alguna de forma de escritura recomendada (camelCase, snake_case)
+
+-clear, limpiar terminal ò Ctrl + L ò  Command + L
+
+-cd, change directory = cambiar de directorio
+
+-touch archivo.extension, crear un archivo
+
+-rm archivo.extension, remove = remover
+
+-shell, es una terminal que nos permite ejecutar comandos en algun lenguaje de scripting
+
+-echo $SHELL, imprimos el lenguaje que esta usando nuestra terminal
+
+-bash, es un lenguaje de scripting
+
+-scripting = ejecutar comandos
+
+-cat > archivo.txt, puedes editar el texto de este archivo
+
+-cat archivo.txt, leer el contenido de ese archivo
+
+-history, historial de comandos que has estado ejecutando en la terminal
+
+-cat >> archivo.txt, puedes editar el texto de este archivo agregando mas texto
+
+-nano archivo.txt, abres el editor de texto "nano" para poder editar un archivo
+
+-para salirte Ctrl + o (te pregunta para guardar), enter para aceptar guardar, Ctrl + x para salir
+
+-head archivo.txt, te muestra las primeras 10 lineas de un archivo
+
+-tail archivo.txt, te muestra las ultimas 10 lineas de un archivo

@@ -1,13 +1,53 @@
-const message = "Bienvenido al ATM";
-console.log (message)
+for(let index = 1; index <=100; index++){
 
-const screen = document.querySelector(".atm-system__screen")
+    if (index % 3=== 0 && index %5 === 0){
+        console.log (index,'FIZBuzz');
+    }
+    else if(index %3 === 0){
+        console.log (index,'Fizz');
+    }
+    else if (index %5=== 0){
+        console.log (index,'Buzz');
+    }
+   
+    else{
+        console.log ( index)
+    }
+}
 
-screen.innerText = message
+//
 
-// screen.innerHTML ="<h1> Bienvenidos </h1>"
+const screen = document.querySelector(".atm-system__screen");
+const inputCard = document.querySelector (".atm-system__card");
 
-const inputCard = document.querySelector (".atm-system__card")
-inputCard.addEventListener('click', function () {
-    alert('insertó tarjeta');
+
+
+//const keys = document.querySelector (".atm-system__keys");
+
+//keys[0].addEventListener("clic", (event) => console.log (event.target.id));
+
+const keys = document.querySelector('.atm-system__input-keys');
+
+
+
+keys.addEventListener('click', (event)=> {
+    if(event.target.id) {
+        console.log(event.target.id);
+    
+    
+} else {
+        console.log("Tecla sin id");
+    }
+})
+
+inputCard.addEventListener ("click", function() {
+    screen.innerText = "Validando tarjeta..."
+    setTimeout( ()=> {
+        screen.innerText = "Ingrese su pin"    
+    }, 2000)
+});
+
+
+window.addEventListener ('load', () => {
+    screen.innerText = "Bienvenidos al ATM";
 });
